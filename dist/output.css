@@ -1110,6 +1110,10 @@ video {
     justify-content: center;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:gap-0 {
     gap: 0px;
   }
