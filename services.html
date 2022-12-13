@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFam</title>
+    <link rel="stylesheet" href="src\input.css">
     <link rel="stylesheet" href="dist/output.css">
-    <link rel="stylesheet" href="src/input.css">
     <script src="https://kit.fontawesome.com/54e86b48e4.js" crossorigin="anonymous"></script>
-    <title>Agro Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- navbar for the index page -->
-        <nav class="flex justify-between items-center border-b border-[#B9B9B9] drop-shadow-md shadow xl:px-20 px-5">
+        <nav class="flex justify-between items-center border-b border-[#B9B9B9] md:px-[82px] xl:px-20 px-5 md:shadow-none lg:drop-shadow-md lg:shadow">
             <!-- the nav logo -->
             <div class="flex md:text-[30px] text-[24px]">
                 <h1 class="text-[#004D18] font-extrabold opacity-[59%]">Agro</h1>
                 <h1 class="text-[#007A25] font-extrabold">Fam</h1>
             </div>
 
-            <!-- navlink, nav-items, nav lists -->
-            <div class="flex gap-[30px] nav-menu items-center basis-3/4 ">
+           <!-- navlink, nav-items, nav lists -->
+            <div class="nav-menu flex gap-[30px]  items-center basis-3/4 ">
                 <a href="#" class="text-black cursor-pointer font-normal text-[16px] hover:text-black">Home</a>
-                <a href="#" class="text-[#B9B9B9] cursor-pointer font-normal text-[16px] hover:text-black">Services</a>
+                <a href="services.html" class="text-[#B9B9B9] cursor-pointer font-normal text-[16px] hover:text-black">Services</a>
                 <a href="#" class="text-[#B9B9B9] cursor-pointer font-normal text-[16px] hover:text-black">Blog</a>
                 <a href="#" class="text-[#B9B9B9] cursor-pointer font-normal text-[16px] hover:text-black">About Us</a>
                 <a href="#" class="text-[#B9B9B9] cursor-pointer font-normal text-[16px] hover:text-black">Contact Us</a>
 
 
-                <div class="flex gap-4 py-4 basis-[40%] lg:basis-[40%]  xl:basis-[50%] justify-end">
+                <div class="flex gap-4 py-4  lg:flex-row lg:basis-[40%]  xl:basis-[50%] justify-end">
                     <a href="#" class="bg-primcol font-bold cursor-pointer  text-[16px] text-seccol rounded-[10px] px-7 py-[8px] hover:text-black hover:bg-white hover:border hover:border-primcol">Sign Up</a>
                     <a href="#" class="bg-seccol cursor-pointer font-bold text-[16px] rounded-[10px] border border-primcol px-7 py-[8px] hover:text-white hover:bg-primcol">Log In</a>
                 </div>
             </div>
-
-            
 
             <!-- header hambuger button.... design in input css -->
             <div class="hamburger lg:hidden ">
@@ -42,7 +42,37 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+  
         </nav>
     </header>
+
+    <section class="lg:px-20 pb-16 px-5">
+        <h3 class="text-[#706E6B] leading-[44px] tracking-[2%] md:text-[18px] text-[14px]">Some of our services include:</h3>
+
+        <div class="flex gap-20 flex-col md:flex-row">
+            <div class="border border-[#706E6B] rounded-t-3xl rounded-br-[10px]">
+                <img src="dist/images/img1.jpg" alt="" srcset="" >
+                <p class="text-center font-bold leading-[44px] tracking-[2%]">Loan</p>
+            </div>
+
+            <div class="border border-[#706E6B] rounded-t-3xl rounded-br-[10px]">
+                <img src="dist/images/img2.jpg" alt="" srcset="" >
+                <p class="text-center font-bold leading-[44px] tracking-[2%]">Farming Training</p>
+            </div>
+
+            <div class="border border-[#706E6B] rounded-t-3xl rounded-br-[10px]">
+                <img src="dist/images/img3.jpg" alt="" srcset="">
+                <p class="text-center font-bold leading-[44px] tracking-[2%]">Tools Rent</p>
+            </div>
+        </div>
+
+        <p class="text-[#989292] tracking-[2%] leading-[30px] md:text-[16px] text-[14px] pb-4">For more enquiries, click the button below</p>
+        <div class="flex items-center justify-center">
+            <a href="#" class="bg-seccol cursor-pointer font-bold text-[16px] rounded-[10px] border border-primcol px-7 py-[8px] hover:text-white hover:bg-primcol text-primcol">See more</a>
+        </div>
+        
+    </section>
+
 </body>
+<script src="src/scripts.js"></script>
 </html>

@@ -551,10 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -577,10 +573,6 @@ video {
 
 .basis-3\/4 {
   flex-basis: 75%;
-}
-
-.basis-\[40\%\] {
-  flex-basis: 40%;
 }
 
 .cursor-pointer {
@@ -812,6 +804,18 @@ video {
   padding-top: 1rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -984,7 +988,7 @@ video {
   height: 2px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: #1A1A1A;
+  background-color: #000000;
 }
 
 @media screen and (max-width: 800px){
@@ -992,6 +996,7 @@ video {
     position: fixed;
     left: -100%;
     top: 0px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1007,8 +1012,8 @@ video {
     background-color: white;
     z-index: 10;
     position: fixed;
-    right: 5%;
-    top: 15%;
+    right: 0%;
+    top: 5%;
   }
 
   .hamburger.active .bar:nth-child(2){
@@ -1023,12 +1028,10 @@ video {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-item{
-    margin: 16px 0;
-  }
-
   .nav-menu.active{
+    position: fixed;
     left: 0;
+    top: 0%;
   }
 }
 
@@ -1110,6 +1113,11 @@ video {
     gap: 0px;
   }
 
+  .md\:px-\[82px\] {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -1124,6 +1132,18 @@ video {
 
   .md\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-48 {
+    padding-bottom: 12rem;
+  }
+
+  .md\:pt-36 {
+    padding-top: 9rem;
   }
 
   .md\:text-\[30px\] {
@@ -1160,6 +1180,12 @@ video {
 
   .md\:leading-\[65px\] {
     line-height: 65px;
+  }
+
+  .md\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
@@ -1215,6 +1241,17 @@ video {
 
   .lg\:text-\[26px\] {
     font-size: 26px;
+  }
+
+  .lg\:shadow {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:drop-shadow-md {
+    --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
 
